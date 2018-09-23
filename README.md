@@ -23,6 +23,37 @@ opponents; and the ability to make predictions on this
 analysis.
 ```
 
+The paper in question is targeted at the typical fantasy football scenario where a draft happens and the entire season is observed.
+
+sideline focuses strictly on a per-week basis, similar to DraftKings style of betting. 
+
+sideline can either recommend the best team to have for a future NFL week, or simply which teams will win that week given head-to-head matchups.
+
+Section 5.1 in the paper outlines the logic behind the per-week selection of players:
+
+```
+"To estimate a player’s weekly performance, we assume
+that each offensive player i has an innate talent for
+achieving each relevant fantasy statistic independent of
+his opponent, and we measure this as s
+ui for each statistic
+s, such as passing/rushing touchdowns, passing/
+rushing yards, fumbles, field goals, etc. Table 1 summarizes
+the offensive and defensive statistics used in the
+prediction.
+Similarly, we assume that every defensive team j
+has an innate ability to defend against these statistics,
+denoted as Ds
+wj where Ds stands for defense against
+statistic s. The projection for the level of each statistic
+achieved by a player in a given week is the product of
+his innate ability and his opponent’s ability to defend.
+We use the product of the two competing statistics as
+a simple model to capture the first order interaction
+between the two matched up agents."
+```
+
+
 * Parameters and decision variables
 1. Parameters:
 ```
