@@ -32,19 +32,30 @@ sideline can either recommend the best team to have for a future NFL week, or si
 Section 5.1 in the paper outlines the logic behind the per-week selection of players:
 
 ```
-"To estimate a player’s weekly performance, we assume
+"
+DM’s team to reasonably ensure a victory in week t.
+Various websites publish expert opinions on players’
+and teams’ performance. Such expert predictions incorporate
+valuable information about rookie players and roster
+changes, which is impossible to anticipate by historical
+data. However, a drawback of the expert prediction is that
+they are usually given in the form of total season points of
+a player or a team.7 Since the objective of fantasy football
+is to win weekly matchups, it is important to provide a
+methodology that estimates fantasy points of players and
+teams scored on a weekly basis.
+...
+To estimate a player’s weekly performance, we assume
 that each offensive player i has an innate talent for
 achieving each relevant fantasy statistic independent of
 his opponent, and we measure this as s
-ui for each statistic
-s, such as passing/rushing touchdowns, passing/
+ui for each statistic s, such as passing/rushing touchdowns, passing/
 rushing yards, fumbles, field goals, etc. Table 1 summarizes
-the offensive and defensive statistics used in the
-prediction.
+the offensive and defensive statistics used in the prediction.
+
 Similarly, we assume that every defensive team j
 has an innate ability to defend against these statistics,
-denoted as Ds
-wj where Ds stands for defense against
+denoted as Ds wj where Ds stands for defense against
 statistic s. The projection for the level of each statistic
 achieved by a player in a given week is the product of
 his innate ability and his opponent’s ability to defend.
